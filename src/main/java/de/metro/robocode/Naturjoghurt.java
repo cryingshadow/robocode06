@@ -14,13 +14,11 @@ public class Naturjoghurt extends Robot {
     int time = 0;
     double radius = 39.9;
     double angle = 29.9;
-    boolean afterLastShotMovedForward;
     LinkedList<Position> positionHistories = new LinkedList<Position>();
 
     @Override
     public void run() {
         while ( true ) {
-
             // Increase timer and save position
             time++;
             positionHistories.add( myPositon() );
@@ -35,7 +33,7 @@ public class Naturjoghurt extends Robot {
     }
 
     public void onScannedRobot( ScannedRobotEvent e ) {
-        paintBlue();
+        changeColor();
         // Back up if the target is too close
         if ( e.getDistance() < 25 ) {
            back( 10 + getSalt() );
@@ -47,37 +45,31 @@ public class Naturjoghurt extends Robot {
             turnGunAndRadar( bearingFromGun );
 
             fire( 3 );
-            moveAfterShot();
+            move();
         }
 
         scan();
     }
 
     public void onBulletHit( BulletHitEvent e ) {
-        paintYellow();
-        //double absoluteBearing = getHeading() + e.getBearing();
-        //double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
-        //turnGunAndRadar( bearingFromGun );
-
+        changeColor();
         fire( 3 );
-        moveAfterShot();
+        move();
     }
 
     public void onHitByBullet( HitByBulletEvent e ) {
-        paintBlack();
-        moveAfterShot();
-        //ahead( getRadius() / 2 );
-        //turnRight( getAngle() - e.getBearing() );
+        changeColor();
+        move();
     }
 
     public void onHitWall( HitWallEvent e ) {
-        setBodyColor( new Color(0, 0, 0) );
+        changeColor();
         back( getRadius() / 2 );
         turnRight( getAngle() );
     }
 
     public void onHitRobot( HitRobotEvent e ) {
-        setBodyColor( new Color(102, 51, 0) );
+        changeColor();
         back( getRadius() / 2 );
         turnRight( getAngle() );
     }
@@ -158,17 +150,6 @@ public class Naturjoghurt extends Robot {
         }
     }
 
-    private void moveAfterShot() {
-        move();
-        /*if ( afterLastShotMovedForward ) {
-            ahead( 10 + getSalt() );
-            afterLastShotMovedForward = false;
-        } else {
-            back( 10 + getSalt() );
-            afterLastShotMovedForward = true;
-        }*/
-    }
-
     private double getSalt() {
         return time % 10;
         //return time % 20;
@@ -176,45 +157,16 @@ public class Naturjoghurt extends Robot {
 
     private double getAngle() {
         return angle + getSalt();
-        //return 1;
     }
 
     private double getRadius() {
         return radius + getSalt();
-        //return 1;
     }
 
     private void turnGunAndRadar( double value ) {
         turnGunRight( value );
-        //turnRight( value );
+        turnRight( value );
         turnRadarRight( value );
-    }
-
-    private void paintBlue() {
-        setBodyColor( new Color(0, 51, 204) );
-        setGunColor( new Color(0, 51, 204) );
-        setRadarColor( new Color(0, 51, 204) );
-        setScanColor( Color.white );
-        setBulletColor( Color.pink );
-        isPink = true;
-    }
-
-    private void paintYellow() {
-        setBodyColor( new Color(255, 255, 0) );
-        setGunColor( new Color(255, 255, 0) );
-        setRadarColor( new Color(255, 255, 0) );
-        setScanColor( Color.white );
-        setBulletColor( Color.pink );
-        isPink = true;
-    }
-
-    private void paintBlack() {
-        setBodyColor( new Color(0, 0, 0) );
-        setGunColor( new Color(0, 0, 0) );
-        setRadarColor( new Color(0, 0, 0) );
-        setScanColor( Color.white );
-        setBulletColor( Color.pink );
-        isPink = true;
     }
 
     private void paintPink() {
@@ -238,8 +190,10 @@ public class Naturjoghurt extends Robot {
     private void changeColor() {
         if ( isPink ) {
             paintGreen();
+            isPink = false;
         } else {
             paintPink();
+            isPink = true;
         }
     }
 }
