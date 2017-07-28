@@ -1,4 +1,3 @@
-/*
 package de.metro.robocode;
 
 import robocode.HitByBulletEvent;
@@ -30,4 +29,3 @@ public class TestRobot extends Robot {
     }
 
 }
-*/

@@ -1,4 +1,3 @@
-/*
 package de.metro.robocode;
 
 import robocode.HitRobotEvent;
@@ -9,27 +8,11 @@ import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 import java.awt.*;
 
-
-    */
-/**
-     * Tracker - a sample robot by Mathew Nelson.
-     * <p/>
-     * Locks onto a robot, moves close, fires when close.
-     *
-     * @author Mathew A. Nelson (original)
-     * @author Flemming N. Larsen (contributor)
-     *//*
-
     public class Tracker extends Robot {
         int count = 0; // Keeps track of how long we've
         // been searching for our target
         double gunTurnAmt; // How much to turn our gun when searching
         String trackName; // Name of the robot we're currently tracking
-
-        */
-/**
-         * run:  Tracker's main run function
-         *//*
 
         public void run() {
             // Set colors
@@ -64,11 +47,6 @@ import java.awt.*;
                 }
             }
         }
-
-        */
-/**
-         * onScannedRobot:  Here's the good stuff
-         *//*
 
         public void onScannedRobot(ScannedRobotEvent e) {
 
@@ -112,11 +90,6 @@ import java.awt.*;
             scan();
         }
 
-        */
-/**
-         * onHitRobot:  Set him as our new target
-         *//*
-
         public void onHitRobot(HitRobotEvent e) {
             // Only print if he's not already our target.
             if (trackName != null && !trackName.equals(e.getName())) {
@@ -133,11 +106,6 @@ import java.awt.*;
             back(50);
         }
 
-        */
-/**
-         * onWin:  Do a victory dance
-         *//*
-
         public void onWin(WinEvent e) {
             for (int i = 0; i < 50; i++) {
                 turnRight(30);
@@ -145,4 +113,3 @@ import java.awt.*;
             }
         }
     }
-*/
