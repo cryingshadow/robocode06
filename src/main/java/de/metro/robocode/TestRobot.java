@@ -1,8 +1,11 @@
-package de.metro.naturjoghurt;
+/*
+package de.metro.robocode;
 
-import robocode.*;
+import robocode.HitByBulletEvent;
+import robocode.Robot;
+import robocode.ScannedRobotEvent;
 
-public class Naturjoghurt extends Robot {
+public class TestRobot extends Robot {
 
     @Override
     public void run() {
@@ -27,3 +30,4 @@ public class Naturjoghurt extends Robot {
     }
 
 }
+*/
