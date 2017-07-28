@@ -52,16 +52,25 @@ public class Naturjoghurt extends Robot {
     }
 
     public void onScannedRobot( ScannedRobotEvent e ) {
-        double absoluteBearing = getHeading() + e.getBearing();
-        double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
-        turnGunRight( bearingFromGun );
-        turnRadarRight( bearingFromGun );
+
+        // Back up if the target is too close
+        if ( e.getDistance() < 50 ) {
+            back( getRadius() );
+
+        // Else fire!
+        } else {
+            double absoluteBearing = getHeading() + e.getBearing();
+            double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
+            turnGunRight( bearingFromGun );
+            turnRadarRight( bearingFromGun );
+            fire( 3 );
+        }
 
         //final double gunTurnAmt = normalRelativeAngleDegrees( e.getBearing() + ( getHeading() - getRadarHeading() ) );
         //turnGunRight( gunTurnAmt );
         //turnRight( e.getBearing() );//gunTurnAmt );
 
-        fire( 3 );
+        scan();
     }
 
     public void onHitRobot( HitRobotEvent e ) {
