@@ -26,19 +26,19 @@
           <file leaf-file-name="Naturjoghurt.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="553">
-                  <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+                <state relative-caret-position="357">
+                  <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#468#478#0" expanded="true" />
-                    <element signature="e#3328#3329#0" expanded="true" />
-                    <element signature="e#3360#3361#0" expanded="true" />
-                    <element signature="e#3392#3393#0" expanded="true" />
-                    <element signature="e#3424#3425#0" expanded="true" />
-                    <element signature="e#3460#3461#0" expanded="true" />
-                    <element signature="e#3496#3497#0" expanded="true" />
-                    <element signature="e#4022#4023#0" expanded="true" />
-                    <element signature="e#4089#4090#0" expanded="true" />
+                    <element signature="e#413#423#0" expanded="true" />
+                    <element signature="e#2335#2336#0" expanded="true" />
+                    <element signature="e#2367#2368#0" expanded="true" />
+                    <element signature="e#2399#2400#0" expanded="true" />
+                    <element signature="e#2431#2432#0" expanded="true" />
+                    <element signature="e#2467#2468#0" expanded="true" />
+                    <element signature="e#2503#2504#0" expanded="true" />
+                    <element signature="e#3029#3030#0" expanded="true" />
+                    <element signature="e#3096#3097#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -106,6 +106,7 @@
       <find>radar</find>
       <find>scan</find>
       <find>tooClose</find>
+      <find>tooClo</find>
     </findStrings>
     <replaceStrings>
       <replace>)</replace>
@@ -661,12 +662,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501240752608</updated>
-      <workItem from="1501240753825" duration="11354000" />
+      <workItem from="1501240753825" duration="12008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11354000" />
+    <option name="totallyTimeSpent" value="12008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
@@ -770,19 +771,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="553">
-          <caret line="46" column="13" lean-forward="false" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#468#478#0" expanded="true" />
-            <element signature="e#3328#3329#0" expanded="true" />
-            <element signature="e#3360#3361#0" expanded="true" />
-            <element signature="e#3392#3393#0" expanded="true" />
-            <element signature="e#3424#3425#0" expanded="true" />
-            <element signature="e#3460#3461#0" expanded="true" />
-            <element signature="e#3496#3497#0" expanded="true" />
-            <element signature="e#4022#4023#0" expanded="true" />
-            <element signature="e#4089#4090#0" expanded="true" />
+            <element signature="e#413#423#0" expanded="true" />
+            <element signature="e#2335#2336#0" expanded="true" />
+            <element signature="e#2367#2368#0" expanded="true" />
+            <element signature="e#2399#2400#0" expanded="true" />
+            <element signature="e#2431#2432#0" expanded="true" />
+            <element signature="e#2467#2468#0" expanded="true" />
+            <element signature="e#2503#2504#0" expanded="true" />
+            <element signature="e#3029#3030#0" expanded="true" />
+            <element signature="e#3096#3097#0" expanded="true" />
           </folding>
         </state>
       </provider>

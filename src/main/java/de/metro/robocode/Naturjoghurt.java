@@ -12,8 +12,6 @@ public class Naturjoghurt extends Robot {
 
     boolean isPink;
     int time = 0;
-    //double radius = 79.9;
-    //double angle = 69.9;
     double radius = 39.9;
     double angle = 29.9;
     boolean afterLastShotMovedForward;
@@ -29,22 +27,10 @@ public class Naturjoghurt extends Robot {
             paintPink();
 
             // Move the radar all of the time
-            turnRadarRight( getAngle() * 2 );
-
-            // Back up if stuck
-            if ( positionHistories.getLast().equals( myPositon() ) ) {
-                back( getRadius() );
-                turnRight( getAngle() );
+            turnRadarRight( 360 );
 
             // Move if nothing is in the way
-            } else if ( !tooClose( getBattleFieldWidth(), getBattleFieldHeight() ) ) {
-                ahead( getRadius() );
-
-            // Do not move into a wall
-            } else if ( tooClose( getBattleFieldWidth(), getBattleFieldHeight() ) ) {
-                turnRight( getAngle() );
-                ahead( getRadius() );
-            }
+            move();
         }
     }
 
@@ -61,14 +47,7 @@ public class Naturjoghurt extends Robot {
             turnGunAndRadar( bearingFromGun );
 
             fire( 3 );
-
-            if ( afterLastShotMovedForward ) {
-                ahead( 10 + getSalt() );
-                afterLastShotMovedForward = false;
-            } else {
-                back( 10 + getSalt() );
-                afterLastShotMovedForward = true;
-            }
+            moveAfterShot();
         }
 
         scan();
@@ -81,21 +60,15 @@ public class Naturjoghurt extends Robot {
         turnGunAndRadar( bearingFromGun );
 
         fire( 3 );
-
-        if ( afterLastShotMovedForward ) {
-            ahead( 10 + getSalt() );
-            afterLastShotMovedForward = false;
-        } else {
-            back( 10 + getSalt() );
-            afterLastShotMovedForward = true;
-        }
+        //moveAfterShot();
     }
 
-    /*public void onHitByBullet( HitByBulletEvent e ) {
+    public void onHitByBullet( HitByBulletEvent e ) {
         paintBlack();
-        ahead( getRadius() / 2 );
-        turnRight( getAngle() - e.getBearing() );
-    }*/
+        moveAfterShot();
+        //ahead( getRadius() / 2 );
+        //turnRight( getAngle() - e.getBearing() );
+    }
 
     public void onWin( final WinEvent e ) {
         for ( int i = 0; i < 100; i++ ) {
@@ -154,6 +127,33 @@ public class Naturjoghurt extends Robot {
                 || getX() > x - 50
                 || getY() < 50
                 || getX() > y - 50 );
+    }
+
+    private void move() {
+        // Back up if stuck
+        if ( positionHistories.getLast().equals( myPositon() ) ) {
+            back( getRadius() );
+            turnRight( getAngle() );
+
+        // Move if nothing is in the way
+        } else if ( !tooClose( getBattleFieldWidth(), getBattleFieldHeight() ) ) {
+            ahead( getRadius() );
+
+            // Do not move into a wall
+        } else if ( tooClose( getBattleFieldWidth(), getBattleFieldHeight() ) ) {
+            turnRight( getAngle() );
+            ahead( getRadius() );
+        }
+    }
+
+    private void moveAfterShot() {
+        if ( afterLastShotMovedForward ) {
+            ahead( 10 + getSalt() );
+            afterLastShotMovedForward = false;
+        } else {
+            back( 10 + getSalt() );
+            afterLastShotMovedForward = true;
+        }
     }
 
     private double getSalt() {
