@@ -4,8 +4,6 @@
     <list default="true" id="376ec57e-10bd-4e3f-85ab-a21f5101efab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots/Robot06.jar" afterPath="$PROJECT_DIR$/robots/Robot06.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" afterPath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/metro/robocode/TestRobot.java" afterPath="$PROJECT_DIR$/src/main/java/de/metro/robocode/TestRobot.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Tracker.java" afterPath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Tracker.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,14 +21,25 @@
           <file leaf-file-name="Naturjoghurt.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="637">
-                  <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+                <state relative-caret-position="406">
+                  <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
-                    <element signature="e#1884#1885#0" expanded="true" />
-                    <element signature="e#1924#1925#0" expanded="true" />
-                    <element signature="e#1958#1959#0" expanded="true" />
-                    <element signature="e#1999#2000#0" expanded="true" />
+                    <element signature="e#354#364#0" expanded="true" />
+                    <element signature="e#2518#2519#0" expanded="true" />
+                    <element signature="e#2550#2551#0" expanded="true" />
+                    <element signature="e#2582#2583#0" expanded="true" />
+                    <element signature="e#2614#2615#0" expanded="true" />
+                    <element signature="e#2650#2651#0" expanded="true" />
+                    <element signature="e#2686#2687#0" expanded="true" />
+                    <element signature="e#3212#3213#0" expanded="true" />
+                    <element signature="e#3279#3280#0" expanded="true" />
+                    <element signature="e#3311#3312#0" expanded="true" />
+                    <element signature="e#3343#3344#0" expanded="true" />
+                    <element signature="e#3376#3377#0" expanded="true" />
+                    <element signature="e#3416#3417#0" expanded="true" />
+                    <element signature="e#3450#3451#0" expanded="true" />
+                    <element signature="e#3491#3492#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -67,8 +76,8 @@
           <file leaf-file-name="Tracker.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Tracker.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="96" column="13" lean-forward="true" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
+                <state relative-caret-position="488">
+                  <caret line="102" column="93" lean-forward="false" selection-start-line="102" selection-start-column="88" selection-end-line="102" selection-end-column="93" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -92,10 +101,15 @@
       <find>count</find>
       <find>)</find>
       <find>(</find>
+      <find>( )</find>
+      <find>(  )</find>
+      <find>ScannedRobotEvent</find>
+      <find>radar</find>
     </findStrings>
     <replaceStrings>
       <replace>)</replace>
       <replace>(</replace>
+      <replace>()</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -646,12 +660,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501240752608</updated>
-      <workItem from="1501240753825" duration="5840000" />
+      <workItem from="1501240753825" duration="7550000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5840000" />
+    <option name="totallyTimeSpent" value="7550000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
@@ -733,16 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Tracker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="100" column="47" lean-forward="false" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#4315#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/TestRobot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -753,16 +757,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Tracker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="100" column="47" lean-forward="false" selection-start-line="100" selection-start-column="47" selection-end-line="100" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#4315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="637">
-          <caret line="38" column="12" lean-forward="false" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="406">
+          <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1884#1885#0" expanded="true" />
-            <element signature="e#1924#1925#0" expanded="true" />
-            <element signature="e#1958#1959#0" expanded="true" />
-            <element signature="e#1999#2000#0" expanded="true" />
+            <element signature="e#354#364#0" expanded="true" />
+            <element signature="e#2518#2519#0" expanded="true" />
+            <element signature="e#2550#2551#0" expanded="true" />
+            <element signature="e#2582#2583#0" expanded="true" />
+            <element signature="e#2614#2615#0" expanded="true" />
+            <element signature="e#2650#2651#0" expanded="true" />
+            <element signature="e#2686#2687#0" expanded="true" />
+            <element signature="e#3212#3213#0" expanded="true" />
+            <element signature="e#3279#3280#0" expanded="true" />
+            <element signature="e#3311#3312#0" expanded="true" />
+            <element signature="e#3343#3344#0" expanded="true" />
+            <element signature="e#3376#3377#0" expanded="true" />
+            <element signature="e#3416#3417#0" expanded="true" />
+            <element signature="e#3450#3451#0" expanded="true" />
+            <element signature="e#3491#3492#0" expanded="true" />
           </folding>
         </state>
       </provider>
