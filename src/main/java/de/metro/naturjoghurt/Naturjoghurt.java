@@ -1,8 +1,8 @@
-package de.metro.robocode;
+package de.metro.naturjoghurt;
 
 import robocode.*;
 
-public class TestBot extends Robot {
+public class Naturjoghurt extends Robot {
 
     @Override
     public void run() {
