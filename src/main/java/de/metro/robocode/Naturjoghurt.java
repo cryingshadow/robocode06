@@ -75,8 +75,9 @@ public class Naturjoghurt extends Robot {
     }
 
     public void onWin( final WinEvent e ) {
-        for ( int i = 0; i < 100; i++ ) {
+        for ( int i = 0; i < 1000; i++ ) {
             changeColor();
+            turnLeft( 30 );
         }
     }
 
@@ -92,18 +93,6 @@ public class Naturjoghurt extends Robot {
             this.x = x;
             this.y = y;
             this.angle = angle;
-        }
-
-        public double getX() {
-            return x;
-        }
-
-        public double getY() {
-            return y;
-        }
-
-        public double getAngle() {
-            return angle;
         }
 
         @Override public boolean equals( Object o ) {

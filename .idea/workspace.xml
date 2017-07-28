@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="376ec57e-10bd-4e3f-85ab-a21f5101efab" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots/Robot06.jar" afterPath="$PROJECT_DIR$/robots/Robot06.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" afterPath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,23 +20,17 @@
           <file leaf-file-name="Naturjoghurt.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="160">
-                  <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
+                <state relative-caret-position="622">
+                  <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#374#384#0" expanded="true" />
-                    <element signature="e#2264#2265#0" expanded="true" />
-                    <element signature="e#2296#2297#0" expanded="true" />
-                    <element signature="e#2328#2329#0" expanded="true" />
-                    <element signature="e#2360#2361#0" expanded="true" />
-                    <element signature="e#2396#2397#0" expanded="true" />
-                    <element signature="e#2432#2433#0" expanded="true" />
-                    <element signature="e#2958#2959#0" expanded="true" />
-                    <element signature="e#3025#3026#0" expanded="true" />
-                    <element signature="e#3903#3904#0" expanded="true" />
-                    <element signature="e#3943#3944#0" expanded="true" />
-                    <element signature="e#3977#3978#0" expanded="true" />
-                    <element signature="e#4018#4019#0" expanded="true" />
+                    <element signature="e#2787#2788#0" expanded="true" />
+                    <element signature="e#2854#2855#0" expanded="true" />
+                    <element signature="e#3732#3733#0" expanded="true" />
+                    <element signature="e#3772#3773#0" expanded="true" />
+                    <element signature="e#3806#3807#0" expanded="true" />
+                    <element signature="e#3847#3848#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -662,12 +655,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501240752608</updated>
-      <workItem from="1501240753825" duration="12812000" />
+      <workItem from="1501240753825" duration="12905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12812000" />
+    <option name="totallyTimeSpent" value="12905000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
@@ -771,23 +764,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
+        <state relative-caret-position="622">
+          <caret line="79" column="26" lean-forward="false" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#374#384#0" expanded="true" />
-            <element signature="e#2264#2265#0" expanded="true" />
-            <element signature="e#2296#2297#0" expanded="true" />
-            <element signature="e#2328#2329#0" expanded="true" />
-            <element signature="e#2360#2361#0" expanded="true" />
-            <element signature="e#2396#2397#0" expanded="true" />
-            <element signature="e#2432#2433#0" expanded="true" />
-            <element signature="e#2958#2959#0" expanded="true" />
-            <element signature="e#3025#3026#0" expanded="true" />
-            <element signature="e#3903#3904#0" expanded="true" />
-            <element signature="e#3943#3944#0" expanded="true" />
-            <element signature="e#3977#3978#0" expanded="true" />
-            <element signature="e#4018#4019#0" expanded="true" />
+            <element signature="e#2787#2788#0" expanded="true" />
+            <element signature="e#2854#2855#0" expanded="true" />
+            <element signature="e#3732#3733#0" expanded="true" />
+            <element signature="e#3772#3773#0" expanded="true" />
+            <element signature="e#3806#3807#0" expanded="true" />
+            <element signature="e#3847#3848#0" expanded="true" />
           </folding>
         </state>
       </provider>
