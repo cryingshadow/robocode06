@@ -10,9 +10,12 @@ import static robocode.util.Utils.normalRelativeAngleDegrees;
 
 public class Naturjoghurt extends Robot {
 
+    boolean isPink;
     int time = 0;
-    double radius = 79.9;
-    double angle = 69.9;
+    //double radius = 79.9;
+    //double angle = 69.9;
+    double radius = 40;
+    double angle = 30;
     LinkedList<Position> positionHistories = new LinkedList<Position>();
 
     @Override
@@ -43,22 +46,33 @@ public class Naturjoghurt extends Robot {
             // Back up if stuck
             if ( positionHistories.getLast().equals( myPositon() ) ) {
                 back( getRadius() );
+                turnRight( getAngle() );
             }
         }
     }
 
     public void onScannedRobot( ScannedRobotEvent e ) {
-        final double gunTurnAmt = normalRelativeAngleDegrees( e.getBearing() + ( getHeading() - getRadarHeading() ) );
-        //turnRight( gunTurnAmt );
-        turnGunRight( gunTurnAmt );
+        double absoluteBearing = getHeading() + e.getBearing();
+        double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
+        turnGunRight( bearingFromGun );
+        turnRadarRight( bearingFromGun );
+
+        //final double gunTurnAmt = normalRelativeAngleDegrees( e.getBearing() + ( getHeading() - getRadarHeading() ) );
+        //turnGunRight( gunTurnAmt );
+        //turnRight( e.getBearing() );//gunTurnAmt );
 
         fire( 3 );
     }
 
     public void onHitRobot( HitRobotEvent e ) {
-        final double gunTurnAmt = normalRelativeAngleDegrees( e.getBearing() + ( getHeading() - getRadarHeading() ) );
+        double absoluteBearing = getHeading() + e.getBearing();
+        double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
+        turnGunRight( bearingFromGun );
+        turnRadarRight( bearingFromGun );
+
+        //final double gunTurnAmt = normalRelativeAngleDegrees( e.getBearing() + ( getHeading() - getRadarHeading() ) );
+        //turnGunRight( gunTurnAmt );
         //turnRight( gunTurnAmt );
-        turnGunRight( gunTurnAmt );
 
         fire( 3 );
     }
@@ -70,12 +84,7 @@ public class Naturjoghurt extends Robot {
 
     public void onWin( final WinEvent e ) {
         for ( int i = 0; i < 100; i++ ) {
-            // turnRight( 50 );
-            if ( ( i % 2 ) == 0 ) {
-                paintPink();
-            } else {
-                paintGreen();
-            }
+            changeColor();
         }
     }
 
@@ -126,15 +135,18 @@ public class Naturjoghurt extends Robot {
     }
 
     private double getSalt() {
-        return time % 20;
+        return time % 10;
+        //return time % 20;
     }
 
     private double getAngle() {
         return angle + getSalt();
+        //return 1;
     }
 
     private double getRadius() {
         return radius + getSalt();
+        //return 1;
     }
 
     private void paintPink() {
@@ -143,6 +155,7 @@ public class Naturjoghurt extends Robot {
         setRadarColor( new Color( 255, 0, 102 ) );
         setScanColor( Color.white );
         setBulletColor( Color.pink );
+        isPink = true;
     }
 
     private void paintGreen() {
@@ -151,5 +164,14 @@ public class Naturjoghurt extends Robot {
         setRadarColor( new Color( 0, 255, 0 ) );
         setScanColor( Color.white );
         setBulletColor( Color.green );
+        isPink = false;
+    }
+
+    private void changeColor() {
+        if ( isPink ) {
+            paintGreen();
+        } else {
+            paintPink();
+        }
     }
 }
