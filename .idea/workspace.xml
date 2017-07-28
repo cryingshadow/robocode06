@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="376ec57e-10bd-4e3f-85ab-a21f5101efab" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots/Robot06.jar" afterPath="$PROJECT_DIR$/robots/Robot06.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" afterPath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -20,8 +21,8 @@
           <file leaf-file-name="Naturjoghurt.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="254">
-                  <caret line="169" column="5" lean-forward="false" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+                <state relative-caret-position="160">
+                  <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#374#384#0" expanded="true" />
@@ -661,12 +662,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501240752608</updated>
-      <workItem from="1501240753825" duration="12767000" />
+      <workItem from="1501240753825" duration="12812000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12767000" />
+    <option name="totallyTimeSpent" value="12812000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
@@ -770,8 +771,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="169" column="5" lean-forward="false" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+        <state relative-caret-position="160">
+          <caret line="166" column="30" lean-forward="false" selection-start-line="166" selection-start-column="30" selection-end-line="166" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#374#384#0" expanded="true" />

@@ -165,7 +165,6 @@ public class Naturjoghurt extends Robot {
 
     private void turnGunAndRadar( double value ) {
         turnGunRight( value );
-        turnRight( value );
         turnRadarRight( value );
     }
 
