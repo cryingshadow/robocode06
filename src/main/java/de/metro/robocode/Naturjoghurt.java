@@ -53,14 +53,14 @@ public class Naturjoghurt extends Robot {
         scan();
     }
 
-    public void onHitRobot( HitRobotEvent e ) {
+    public void onBulletHit( BulletHitEvent e ) {
         paintYellow();
-        double absoluteBearing = getHeading() + e.getBearing();
-        double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
-        turnGunAndRadar( bearingFromGun );
+        //double absoluteBearing = getHeading() + e.getBearing();
+        //double bearingFromGun = normalRelativeAngleDegrees( absoluteBearing - getGunHeading() );
+        //turnGunAndRadar( bearingFromGun );
 
         fire( 3 );
-        //moveAfterShot();
+        moveAfterShot();
     }
 
     public void onHitByBullet( HitByBulletEvent e ) {
@@ -68,6 +68,18 @@ public class Naturjoghurt extends Robot {
         moveAfterShot();
         //ahead( getRadius() / 2 );
         //turnRight( getAngle() - e.getBearing() );
+    }
+
+    public void onHitWall( HitWallEvent e ) {
+        setBodyColor( new Color(0, 0, 0) );
+        back( getRadius() / 2 );
+        turnRight( getAngle() );
+    }
+
+    public void onHitRobot( HitRobotEvent e ) {
+        setBodyColor( new Color(102, 51, 0) );
+        back( getRadius() / 2 );
+        turnRight( getAngle() );
     }
 
     public void onWin( final WinEvent e ) {
@@ -147,13 +159,14 @@ public class Naturjoghurt extends Robot {
     }
 
     private void moveAfterShot() {
-        if ( afterLastShotMovedForward ) {
+        move();
+        /*if ( afterLastShotMovedForward ) {
             ahead( 10 + getSalt() );
             afterLastShotMovedForward = false;
         } else {
             back( 10 + getSalt() );
             afterLastShotMovedForward = true;
-        }
+        }*/
     }
 
     private double getSalt() {

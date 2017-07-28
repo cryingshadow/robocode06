@@ -4,8 +4,6 @@
     <list default="true" id="376ec57e-10bd-4e3f-85ab-a21f5101efab" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/robots/Robot06.jar" afterPath="$PROJECT_DIR$/robots/Robot06.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Robot06-0.1.jar" afterPath="$PROJECT_DIR$/target/Robot06-0.1.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/metro/robocode/Naturjoghurt$Position.class" afterPath="$PROJECT_DIR$/target/classes/de/metro/robocode/Naturjoghurt$Position.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/de/metro/robocode/Naturjoghurt.class" afterPath="$PROJECT_DIR$/target/classes/de/metro/robocode/Naturjoghurt.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" afterPath="$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
@@ -26,19 +24,19 @@
           <file leaf-file-name="Naturjoghurt.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="357">
-                  <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+                <state relative-caret-position="1408">
+                  <caret line="151" column="33" lean-forward="true" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#413#423#0" expanded="true" />
-                    <element signature="e#2335#2336#0" expanded="true" />
-                    <element signature="e#2367#2368#0" expanded="true" />
-                    <element signature="e#2399#2400#0" expanded="true" />
-                    <element signature="e#2431#2432#0" expanded="true" />
-                    <element signature="e#2467#2468#0" expanded="true" />
-                    <element signature="e#2503#2504#0" expanded="true" />
-                    <element signature="e#3029#3030#0" expanded="true" />
-                    <element signature="e#3096#3097#0" expanded="true" />
+                    <element signature="e#2672#2673#0" expanded="true" />
+                    <element signature="e#2704#2705#0" expanded="true" />
+                    <element signature="e#2736#2737#0" expanded="true" />
+                    <element signature="e#2768#2769#0" expanded="true" />
+                    <element signature="e#2804#2805#0" expanded="true" />
+                    <element signature="e#2840#2841#0" expanded="true" />
+                    <element signature="e#3366#3367#0" expanded="true" />
+                    <element signature="e#3433#3434#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -107,6 +105,7 @@
       <find>scan</find>
       <find>tooClose</find>
       <find>tooClo</find>
+      <find>moveAfterShot</find>
     </findStrings>
     <replaceStrings>
       <replace>)</replace>
@@ -662,12 +661,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501240752608</updated>
-      <workItem from="1501240753825" duration="12008000" />
+      <workItem from="1501240753825" duration="12484000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12008000" />
+    <option name="totallyTimeSpent" value="12484000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
@@ -771,19 +770,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/de/metro/robocode/Naturjoghurt.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="19" lean-forward="false" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        <state relative-caret-position="1408">
+          <caret line="151" column="33" lean-forward="true" selection-start-line="151" selection-start-column="33" selection-end-line="151" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#413#423#0" expanded="true" />
-            <element signature="e#2335#2336#0" expanded="true" />
-            <element signature="e#2367#2368#0" expanded="true" />
-            <element signature="e#2399#2400#0" expanded="true" />
-            <element signature="e#2431#2432#0" expanded="true" />
-            <element signature="e#2467#2468#0" expanded="true" />
-            <element signature="e#2503#2504#0" expanded="true" />
-            <element signature="e#3029#3030#0" expanded="true" />
-            <element signature="e#3096#3097#0" expanded="true" />
+            <element signature="e#2672#2673#0" expanded="true" />
+            <element signature="e#2704#2705#0" expanded="true" />
+            <element signature="e#2736#2737#0" expanded="true" />
+            <element signature="e#2768#2769#0" expanded="true" />
+            <element signature="e#2804#2805#0" expanded="true" />
+            <element signature="e#2840#2841#0" expanded="true" />
+            <element signature="e#3366#3367#0" expanded="true" />
+            <element signature="e#3433#3434#0" expanded="true" />
           </folding>
         </state>
       </provider>
