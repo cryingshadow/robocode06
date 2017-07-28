@@ -29,25 +29,26 @@ public class Naturjoghurt extends Robot {
             positionHistories.add( myPositon() );
 
             // Move the radar all of the time
-            turnRadarRight( getAngle() );
-
-            // Do not move into a wall
-            if ( getX() < 100
-                    || getX() > getBattleFieldWidth() - 100
-                    || getY() < 100
-                    || getX() > getBattleFieldHeight() - 100 ) {
-                turnRight( getAngle() );
-                ahead( getRadius() );
-            }
-
-            // Default movement -> ahead
-            ahead( getRadius() );
+            turnRadarRight( getAngle() * 2 );
 
             // Back up if stuck
             if ( positionHistories.getLast().equals( myPositon() ) ) {
                 back( getRadius() );
                 turnRight( getAngle() );
+
+            // Do not move into a wall
+            } else  if ( getX() < 100
+                    || getX() > getBattleFieldWidth() - 100
+                    || getY() < 100
+                    || getX() > getBattleFieldHeight() - 100 ) {
+                turnRight( getAngle() );
+                ahead( getRadius() );
+
+            // Default movement -> ahead
+            } else {
+                ahead( getRadius() );
             }
+
         }
     }
 
